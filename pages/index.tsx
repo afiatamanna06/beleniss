@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Intro from '../components/home/Intro'
 import About from '../components/about/About'
 import Gallery from '../components/gallery/Gallery'
+import Menu from '../components/menu/Menu'
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <Intro />
       <About />
       <Gallery />
+      <Menu />
     </div>
   )
 }

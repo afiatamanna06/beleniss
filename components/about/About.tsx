@@ -2,7 +2,7 @@ import { Box, Center, Flex, Image } from '@chakra-ui/react'
 
 function About() {
   return (
-    <Flex id="about" justify="center" h="40rem" mt={["20rem", "20rem", "20rem", "10", "10"]}>
+    <Flex id="about" justify="center" pt="20" h="40rem" mt={["20rem", "20rem", "20rem", "0", "0"]}>
         <Center>
             <Flex gap={10} position="relative" direction={["column", "column", "column", "row", "row"]}>
                 <Image src="/intro_1.jpg" w="20rem" h="33rem" alt="" />

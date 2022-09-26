@@ -5,7 +5,7 @@ const galleryImages = ["/dish1.jpg", "/dish2.jpg", "/dish3.jpg", "/dish4.jpg", "
 
 function Gallery() {
   return (
-    <Flex direction="column" alignItems="center" mt={[80, 80, 80, 0, 0]} w="full">
+    <Flex id="gallery" direction="column" alignItems="center" mt={[80, 80, 80, 0, 0]} pt="20" w="full">
         <CommonHeader heading="Gallery" description="Our Hot Picked Cakes" w={["full"]} />
         <Grid w="full" alignItems="center" mt="20" templateColumns={["repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]}>
             {galleryImages.map((image) => (
