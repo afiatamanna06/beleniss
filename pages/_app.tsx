@@ -4,6 +4,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import NavigationBar from '../components/navigation/NavigationBar'
 
 function MyApp({ Component, pageProps }: AppProps) {
+
   return (
     <ChakraProvider>
       <NavigationBar />
