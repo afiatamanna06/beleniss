@@ -5,6 +5,7 @@ import Intro from '../components/home/Intro'
 import About from '../components/about/About'
 import Gallery from '../components/gallery/Gallery'
 import Menu from '../components/menu/Menu'
+import Testimonials from '../components/testimonials/Testimonials'
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <About />
       <Gallery />
       <Menu />
+      <Testimonials />
     </div>
   )
 }
