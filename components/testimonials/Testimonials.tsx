@@ -34,7 +34,7 @@ function Testimonials() {
                         color="white"
                         _hover={{ bgColor: "#ff2377" }}
                         sx={{
-                            transform: ["none", "none", "translate(-50%, -90%)", "translate(-50%, -90%)"],
+                            transform: ["translate(-30%, -70%)", "translate(-30%, -70%)", "translate(-30%, -70%)", "translate(-30%, -70%)"],
                         }}
                         />
                     )
@@ -50,7 +50,7 @@ function Testimonials() {
                         color="white"
                         _hover={{ bgColor: "#ff2377" }}
                         sx={{
-                            transform: ["none", "none", "translate(50%, -90%)", "translate(50%, -90%)"],
+                            transform: ["translate(30%, -70%)", "translate(30%, -70%)", "translate(30%, -70%)", "translate(30%, -70%)"],
                         }}
                         />
                     )
