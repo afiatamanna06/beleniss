@@ -105,7 +105,7 @@ function OrderForm() {
                 </Select>
             </Flex>
         </Flex>
-        <Button mt="5" borderRadius="none" bg="#C8A97E" border="1px" borderColor="#C8A97E" color="white" p="6" _hover={{ color: "white", bg: "rgba(0, 0, 0, .4)", border: "1px", borderColor: "#C8A97E" }} _active={{ color: "white", bg: "rgba(0, 0, 0, .4)", border: "1px", borderColor: "#C8A97E" }}>Order Your Cake</Button>
+        <Button mt="5" borderRadius="none" bg="#C8A97E" border="1px" borderColor="#C8A97E" color="white" p="6" _hover={{ color: "white", bg: "rgba(0, 0, 0, .5)", border: "1px", borderColor: "#C8A97E" }} _active={{ color: "white", bg: "rgba(0, 0, 0, .4)", border: "1px", borderColor: "#C8A97E" }}>Order Your Cake</Button>
     </Flex>
   )
 }
