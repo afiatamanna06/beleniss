@@ -1,4 +1,4 @@
-import { Box, Center, Flex, IconButton, useBreakpointValue } from "@chakra-ui/react"
+import { background, Box, Center, Flex, IconButton, useBreakpointValue } from "@chakra-ui/react"
 import Carousel from "nuka-carousel"
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi"
 import CommonHeader from "../common/CommonHeader"
@@ -17,7 +17,7 @@ function Testimonials() {
 
   return (
     <Box mt="28" w="full" px={[4, 4, 4, 0, 0]} id="testimonials" bgImage="url('/bg_1.jpg')" bgSize='cover' bgAttachment='fixed' pos='relative' bgRepeat='no-repeat'>
-        <Flex pt="16" px={[2, 2, 2, 0, 0]} direction="column" h="40rem" alignItems="center" bg="rgba(0, 0, 0, .7)">
+        <Flex pt="16" px={[2, 2, 2, 0, 0]} direction="column" h="43rem" alignItems="center" bg="rgba(0, 0, 0, .7)">
             <CommonHeader heading="Testimonials" description="Happy Clients" w={["full"]} descriptionColor="white" />
             <Box maxW={["100%", "100%", "100%", "65rem", "65rem"]} mt="20">
                 <Carousel 
@@ -55,9 +55,15 @@ function Testimonials() {
                         />
                     )
                     }
+                    defaultControlsConfig={{
+                      pagingDotsStyle: {
+                        fill: "#ff2377",
+                        width: "2rem",
+                      }
+                    }}
                     wrapAround>
                     {testimonialsList.map(({image, title, description, position}) => (
-                        <Flex pb="8" key={title} m={3}>
+                        <Flex pb="10" key={title} m={3}>
                             <TestimonialsCard image={image} name={title} description={description} position={position} />
                         </Flex>
                     ))}
