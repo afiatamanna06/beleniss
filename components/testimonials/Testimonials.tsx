@@ -19,7 +19,7 @@ function Testimonials() {
     <Box mt="28" w="full" px={[4, 4, 4, 0, 0]} id="testimonials" bgImage="url('/bg_1.jpg')" bgSize='cover' bgAttachment='fixed' pos='relative' bgRepeat='no-repeat'>
         <Flex pt="16" px={[2, 2, 2, 0, 0]} direction="column" h="40rem" alignItems="center" bg="rgba(0, 0, 0, .7)">
             <CommonHeader heading="Testimonials" description="Happy Clients" w={["full"]} descriptionColor="white" />
-            <Box maxW={["100%", "100%", "100%", "65rem", "65rem"]}>
+            <Box maxW={["100%", "100%", "100%", "65rem", "65rem"]} mt="20">
                 <Carousel 
                     autoplay={true}
                     slidesToShow={numberOfCarouselComponents}
@@ -27,12 +27,14 @@ function Testimonials() {
                     ({ previousSlide }) => (
                         <IconButton
                         aria-label="Previous slide"
-                        icon={<FiChevronLeft size={60} />}
+                        icon={<FiChevronLeft size={20} />}
                         onClick={previousSlide}
-                        color="black"
-                        colorScheme="skyblue"
+                        rounded="full"
+                        bgColor="#ff2377"
+                        color="white"
+                        _hover={{ bgColor: "#ff2377" }}
                         sx={{
-                            transform: ["none", "none", "translate(-50%, 0)", "translate(-50%, 0)"],
+                            transform: ["none", "none", "translate(-50%, -90%)", "translate(-50%, -90%)"],
                         }}
                         />
                     )
@@ -41,21 +43,23 @@ function Testimonials() {
                     ({ nextSlide }) => (
                         <IconButton
                         aria-label="Next slide"
-                        icon={<FiChevronRight size={60} />}
+                        icon={<FiChevronRight size={20} />}
                         onClick={nextSlide}
-                        color="black"
-                        colorScheme="skyblue"
+                        rounded="full"
+                        bgColor="#ff2377"
+                        color="white"
+                        _hover={{ bgColor: "#ff2377" }}
                         sx={{
-                            transform: ["none", "none", "translate(50%, 0)", "translate(50%, 0)"],
+                            transform: ["none", "none", "translate(50%, -90%)", "translate(50%, -90%)"],
                         }}
                         />
                     )
-                    } 
+                    }
                     wrapAround>
                     {testimonialsList.map(({image, title, description, position}) => (
-                        <Center pb="20" key={title}>
+                        <Flex pb="16" key={title} m={3}>
                             <TestimonialsCard image={image} name={title} description={description} position={position} />
-                        </Center>
+                        </Flex>
                     ))}
                 </Carousel>
             </Box>
