@@ -9,7 +9,7 @@ interface propTypes {
 
 function TestimonialsCard({image, name, description, position}: propTypes) {
   return (
-    <Flex direction="column" alignItems="start" gap={5} p="5" border="1px" borderColor="rgba(255, 255, 255, 0.2)" borderRadius="lg">
+    <Flex direction="column" alignItems="start" gap={5} p="5" border="1px" borderColor="rgba(255, 255, 255, 0.2)" borderRadius="md">
         <Box color="rgba(255, 255, 255, 0.6)" fontStyle="italic">{description}</Box>
         <Flex gap={4} alignItems="center">
             <Image src={image} h="5rem" w="5rem" rounded="full" alt="" />
