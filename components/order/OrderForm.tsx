@@ -25,42 +25,68 @@ const cakeKg = [
 
 function OrderForm() {
   return (
-    <Flex direction="column" pb="14" ml={[0, 0, 0, 80, 80]} gap={5} w={["100%", "100%", "100%", "43rem", "43rem"]} alignItems="center" bg="rgba(0, 0, 0, .2)">
+    <Flex direction="column" pb="14" backdropFilter="blur(4px)" ml={[0, 0, 0, 80, 80]} gap={5} w={["100%", "100%", "100%", "43rem", "43rem"]} alignItems="center" bg="rgba(0, 0, 0, .4)">
         <CommonHeader heading="Order" description="Your Cake" mt="-50" w={["full"]} descriptionColor="white" />
         <Flex direction={["column", "column", "column", "row", "row"]} gap={5} color="white">
             <Flex direction="column">
                 <Box>Name</Box>
-                <Input minW="18rem" borderRadius="none" type="text" placeholder="Name" bg="rgba(0, 0, 0, .4)" border="0px" _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none"  }} />
+                <Input minW="18rem" _placeholder={{ color: "white" }} borderRadius="none" type="text" placeholder="Name" bg="rgba(0, 0, 0, .5)" border="0px" _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none"  }} />
             </Flex>
             <Flex direction="column">
                 <Box>Email</Box>
-                <Input minW="18rem" borderRadius="none" type="text" placeholder="Email" bg="rgba(0, 0, 0, .4)" border="0px" _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none" }} />
+                <Input minW="18rem" _placeholder={{ color: "white" }} borderRadius="none" type="text" placeholder="Email" bg="rgba(0, 0, 0, .5)" border="0px" _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none" }} />
             </Flex>
         </Flex>
         <Flex direction={["column", "column", "column", "row", "row"]} gap={5} color="white">
             <Flex direction="column">
                 <Box>Address</Box>
-                <Input minW="18rem" borderRadius="none" type="text" placeholder="Address" bg="rgba(0, 0, 0, .4)" border="0px" _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none"  }} />
+                <Input minW="18rem" _placeholder={{ color: "white" }} borderRadius="none" type="text" placeholder="Address" bg="rgba(0, 0, 0, .5)" border="0px" _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none"  }} />
             </Flex>
             <Flex direction="column">
                 <Box>Phone</Box>
-                <Input minW="18rem" borderRadius="none" type="tel" placeholder="Phone" bg="rgba(0, 0, 0, .4)" border="0px" _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none" }} />
+                <Input minW="18rem" _placeholder={{ color: "white" }} borderRadius="none" type="tel" placeholder="Phone" bg="rgba(0, 0, 0, .5)" border="0px" _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none" }} />
             </Flex>
         </Flex>
         <Flex direction={["column", "column", "column", "row", "row"]} gap={5} color="white">
             <Flex direction="column">
                 <Box>Date</Box>
-                <Input minW="18rem" borderRadius="none" type="date" placeholder="Date" bg="rgba(0, 0, 0, .4)" border="0px" _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none"  }} />
+                <Input 
+                    minW="18rem" 
+                    sx={{ 
+                        "&::-webkit-calendar-picker-indicator": {
+                            filter: "invert(1)"
+                        }
+                    }} 
+                    borderRadius="none" 
+                    type="date" 
+                    placeholder="Date" 
+                    bg="rgba(0, 0, 0, .5)" 
+                    border="0px" 
+                    _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none"  }} 
+                />
             </Flex>
             <Flex direction="column">
                 <Box>Time</Box>
-                <Input minW="18rem" borderRadius="none" type="time" placeholder="Time" bg="rgba(0, 0, 0, .4)" border="0px" _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none" }} />
+                <Input 
+                    minW="18rem" 
+                    sx={{ 
+                        "&::-webkit-calendar-picker-indicator": {
+                            filter: "invert(1)"
+                        }
+                    }} 
+                    borderRadius="none" 
+                    type="time" 
+                    placeholder="Time" 
+                    bg="rgba(0, 0, 0, .5)" 
+                    border="0px" 
+                    _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none"  }} 
+                />
             </Flex>
         </Flex>
         <Flex direction={["column", "column", "column", "row", "row"]} gap={5} color="white">
             <Flex direction="column">
                 <Box>Cake Flavour</Box>
-                <Select minW="18rem" borderRadius="none" bg="rgba(0, 0, 0, .4)" border="0px" _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none"  }}>
+                <Select minW="18rem" borderRadius="none" bg="rgba(0, 0, 0, .5)" border="0px" _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none"  }}>
                     {cakeFlavour.map(({ value, displayText }) => (
                         <option key={displayText} value={value} style={{ backgroundColor: "rgb(47, 48, 55)" }}>
                         {displayText}
@@ -70,7 +96,7 @@ function OrderForm() {
             </Flex>
             <Flex direction="column">
                 <Box>Kg</Box>
-                <Select minW="18rem" borderRadius="none" bg="rgba(0, 0, 0, .4)" border="0px" _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none"  }}>
+                <Select minW="18rem" borderRadius="none" bg="rgba(0, 0, 0, .5)" border="0px" _focus={{ borderWidth: "0px", borderColor: "#C8A97E", outline: "0", WebkitAppearance: "none", boxShadow: "none", WebkitBoxShadow: "none"  }}>
                     {cakeKg.map(({ value, displayText }) => (
                         <option key={displayText} value={value} style={{ backgroundColor: "rgb(47, 48, 55)" }}>
                         {displayText}
