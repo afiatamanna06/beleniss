@@ -7,6 +7,7 @@ import Gallery from '../components/gallery/Gallery'
 import Menu from '../components/menu/Menu'
 import Testimonials from '../components/testimonials/Testimonials'
 import Chef from '../components/chef/Chef'
+import Order from '../components/order/Order'
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
       <Menu />
       <Testimonials />
       <Chef />
+      <Order />
     </div>
   )
 }
