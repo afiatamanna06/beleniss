@@ -1,8 +1,11 @@
-import React from 'react'
+import { Flex } from '@chakra-ui/react'
+import CommonHeader from '../common/CommonHeader'
 
 function Blog() {
   return (
-    <div>Blog</div>
+    <Flex id="blog" direction="column" alignItems="center" mt={[12]} pt="20" w="full">
+        <CommonHeader heading="Blog" description="Recent Posts" w={["full"]} />
+    </Flex>
   )
 }
 
