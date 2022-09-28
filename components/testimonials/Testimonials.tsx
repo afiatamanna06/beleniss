@@ -34,7 +34,7 @@ function Testimonials() {
                         color="white"
                         _hover={{ bgColor: "#ff2377" }}
                         sx={{
-                            transform: ["translate(-30%, -70%)", "translate(-30%, -70%)", "translate(-30%, -70%)", "translate(-30%, -70%)"],
+                            transform: ["translate(-30%, -50%)", "translate(-30%, -50%)", "translate(-30%, -50%)", "translate(-30%, -50%)"],
                         }}
                         />
                     )
@@ -50,14 +50,14 @@ function Testimonials() {
                         color="white"
                         _hover={{ bgColor: "#ff2377" }}
                         sx={{
-                            transform: ["translate(30%, -70%)", "translate(30%, -70%)", "translate(30%, -70%)", "translate(30%, -70%)"],
+                            transform: ["translate(30%, -50%)", "translate(30%, -50%)", "translate(30%, -50%)", "translate(30%, -50%)"],
                         }}
                         />
                     )
                     }
                     wrapAround>
                     {testimonialsList.map(({image, title, description, position}) => (
-                        <Flex pb="16" key={title} m={3}>
+                        <Flex pb="8" key={title} m={3}>
                             <TestimonialsCard image={image} name={title} description={description} position={position} />
                         </Flex>
                     ))}
