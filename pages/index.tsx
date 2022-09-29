@@ -9,6 +9,7 @@ import Testimonials from '../components/testimonials/Testimonials'
 import Chef from '../components/chef/Chef'
 import Order from '../components/order/Order'
 import Blog from '../components/blog/Blog'
+import Footer from '../components/footer/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
       <Chef />
       <Order />
       <Blog />
+      <Footer />
     </div>
   )
 }
