@@ -4,7 +4,7 @@ function OpenHours() {
   return (
     <Flex direction="column" color="white" gap={6}>
       <Box fontWeight="semibold" mt="5">Open Hours</Box>
-      <Box color="gray.300" fontSize="sm">
+      <Box color="rgba(255, 255, 255, 0.7)" fontSize="sm">
         <Flex justify="space-between">
           <Box>Monday</Box>
           <Box>9:00 - 24:00</Box>
