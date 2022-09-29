@@ -9,7 +9,7 @@ interface propTypes {
 
 function MenuCard({image, name, description, price}: propTypes) {
   return (
-    <Flex justify="space-between" alignItems="start" p="5" minW={["100%", "100%", "100%", "100%", "10rem", "30rem"]} border="1px" borderColor="gray.200" borderRadius="lg">
+    <Flex justify="space-between" cursor="pointer" _hover={{ border: "2px", borderColor: "#9B4B15" }} alignItems="start" p="5" minW={["100%", "100%", "100%", "100%", "10rem", "30rem"]} border="2px" borderColor="gray.100" borderRadius="lg">
         <Flex gap={4}>
             <Image src={image} w="6rem" h="6rem" rounded="full" alt="" />
             <Box>
