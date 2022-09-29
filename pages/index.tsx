@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Image } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import Head from 'next/head'
 import Intro from '../components/home/Intro'
 import About from '../components/about/About'
@@ -10,6 +10,7 @@ import Chef from '../components/chef/Chef'
 import Order from '../components/order/Order'
 import Blog from '../components/blog/Blog'
 import Footer from '../components/footer/Footer'
+import HomeCarousel from '../components/home/HomeCarousel'
 
 const Home: NextPage = () => {
   return (
@@ -19,7 +20,9 @@ const Home: NextPage = () => {
         <meta name="description" content="Beleniss bakery shop" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Image position="absolute" zIndex={1} objectFit="cover" src="/bg_2.jpg" w="full" h="100vh" alt="" />
+      <Box position="absolute" w="full" h="100vh">
+        <HomeCarousel />
+      </Box>
       <Intro />
       <About />
       <Gallery />
