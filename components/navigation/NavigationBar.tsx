@@ -18,17 +18,17 @@ function NavigationBar() {
         <Flex gap={[4, 4, 4, 8, 8]} alignItems={["start", "start", "start", "center", "center"]} direction={["column", "column", "column", "row", "row"]} display={[responsiveDisplay, responsiveDisplay, responsiveDisplay, "flex", "flex"]}>
             {navigationLinks.slice(0, 6).map(({name, path}) => (
                 <Link href={path} key={name} passHref>
-                    <ChakraLink fontWeight="medium">{name}</ChakraLink>
+                    <ChakraLink fontWeight="medium" onClick={() => { responsiveDisplay === "flex" ? setResponsiveDisplay("none") : setResponsiveDisplay("flex") }}>{name}</ChakraLink>
                 </Link>
             ))}
             <Link href="#order" passHref>
-                <Button bg="#C8A97E" color="white">
+                <Button bg="#C8A97E" color="white" _hover={{ bg: "#C8A97E" }} _focus={{ bg: "#C8A97E" }} onClick={() => { responsiveDisplay === "flex" ? setResponsiveDisplay("none") : setResponsiveDisplay("flex") }}>
                     Order a cake
                 </Button>
             </Link>
             {navigationLinks.slice(6).map(({name, path}) => (
                 <Link href={path} key={name} passHref>
-                    <ChakraLink fontWeight="medium">{name}</ChakraLink>
+                    <ChakraLink fontWeight="medium" onClick={() => { responsiveDisplay === "flex" ? setResponsiveDisplay("none") : setResponsiveDisplay("flex") }}>{name}</ChakraLink>
                 </Link>
             ))}
         </Flex>
