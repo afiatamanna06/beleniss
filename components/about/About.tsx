@@ -19,7 +19,7 @@ function About() {
         </Center>
         <Center>
             <Flex direction={["column", "column", "column", "row", "row"]} alignItems={["center", "center", "center", "start", "start"]} maxW="70rem" gap={[20, 20, 20, 10]} mt="20" mb="10rem">
-                  <Grid gap={[2, 2, 2, 10]} templateColumns={["repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]}>
+                  <Grid gap={[4, 4, 4, 10]} px="4" templateColumns={["repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]}>
                       {aboutData.map(({ title, description }) => (
                         <AboutCard key={title} title={title} description={description} />
                       ))}

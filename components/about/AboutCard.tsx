@@ -8,7 +8,7 @@ type propTypes = {
 function AboutCard({title, description}: propTypes) {
   return (
     <Flex direction="column">
-        <Box color="#C8A97E" fontFamily="'Poppins', sans-serif" fontSize="5xl" fontWeight="medium">
+        <Box color="#C8A97E" fontFamily="'Poppins', sans-serif" fontSize={["3xl", "3xl", "5xl", "5xl"]} fontWeight="medium">
             {title}
         </Box>
         <Box fontSize="sm">
