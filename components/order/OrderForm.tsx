@@ -141,7 +141,7 @@ function OrderForm() {
         <Flex direction="column">
           <Box>Date</Box>
           <Input
-            minW={["100%", "18rem", "18rem", "18rem"]}
+            minW={["15rem", "18rem", "18rem", "18rem"]}
             sx={{
               "&::-webkit-calendar-picker-indicator": {
                 filter: "invert(1)",
@@ -165,7 +165,7 @@ function OrderForm() {
         <Flex direction="column">
           <Box>Time</Box>
           <Input
-            minW={["100%", "18rem", "18rem", "18rem"]}
+            minW={["15rem", "18rem", "18rem", "18rem"]}
             sx={{
               "&::-webkit-calendar-picker-indicator": {
                 filter: "invert(1)",
@@ -195,7 +195,7 @@ function OrderForm() {
         <Flex direction="column">
           <Box>Cake Flavour</Box>
           <Select
-            minW={["100%", "18rem", "18rem", "18rem"]}
+            minW={["15rem", "18rem", "18rem", "18rem"]}
             borderRadius="none"
             bg="rgba(0, 0, 0, .5)"
             border="0px"
@@ -222,7 +222,7 @@ function OrderForm() {
         <Flex direction="column">
           <Box>Kg</Box>
           <Select
-            minW={["100%", "18rem", "18rem", "18rem"]}
+            minW={["15rem", "18rem", "18rem", "18rem"]}
             borderRadius="none"
             bg="rgba(0, 0, 0, .5)"
             border="0px"
