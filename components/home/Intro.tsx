@@ -15,10 +15,10 @@ function Intro() {
                       animation="fade"
                       withoutControls={true}
                       wrapAround>
-                    <Box fontFamily="'Poppins', sans-serif" textAlign="center" letterSpacing={5} fontSize="6xl" fontWeight="semibold" textTransform="uppercase">Wedding Cake</Box>
-                    <Box fontFamily="'Poppins', sans-serif" textAlign="center" letterSpacing={5} fontSize="6xl" fontWeight="semibold" textTransform="uppercase">Birthday Cake</Box>
-                    <Box fontFamily="'Poppins', sans-serif" textAlign="center" letterSpacing={5} fontSize="6xl" fontWeight="semibold" textTransform="uppercase">Beleniss Special Dessert</Box>
-                    <Box fontFamily="'Poppins', sans-serif" textAlign="center" letterSpacing={5} fontSize="6xl" fontWeight="semibold" textTransform="uppercase">Beleniss Special Pastries</Box>
+                    <Box fontFamily="'Poppins', sans-serif" textAlign="center" letterSpacing={5} fontSize={["2xl", "2xl", "6xl", "6xl"]} fontWeight="semibold" textTransform="uppercase">Wedding Cake</Box>
+                    <Box fontFamily="'Poppins', sans-serif" textAlign="center" letterSpacing={5} fontSize={["2xl", "2xl", "6xl", "6xl"]} fontWeight="semibold" textTransform="uppercase">Birthday Cake</Box>
+                    <Box fontFamily="'Poppins', sans-serif" textAlign="center" letterSpacing={5} fontSize={["2xl", "2xl", "6xl", "6xl"]} fontWeight="semibold" textTransform="uppercase">Beleniss Special Dessert</Box>
+                    <Box fontFamily="'Poppins', sans-serif" textAlign="center" letterSpacing={5} fontSize={["2xl", "2xl", "6xl", "6xl"]} fontWeight="semibold" textTransform="uppercase">Beleniss Special Pastries</Box>
                   </Carousel>
                 </Box>
             </Flex>
