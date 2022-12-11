@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <Head>
         <title>Beleniss</title>
         <meta name="description" content="Beleniss bakery shop" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <Box position="absolute" w="full" h="100vh">
         <HomeCarousel />
