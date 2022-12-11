@@ -44,8 +44,11 @@ function NavigationBar() {
             fontWeight="semibold"
             fontFamily="'Great Vibes', cursive"
             fontSize="2xl"
+            cursor="pointer"
           >
-            Beleniss
+            <Link href="/" passHref>
+              Beleniss
+            </Link>
           </Box>
           <Box
             display={["block", "block", "block", "none", "none"]}
